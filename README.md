@@ -5,7 +5,7 @@ These are commands/settings i usually use for Admin duties.
 
 # Disk Health
 smartctl -a /dev/sda
-### /etc:smartconf
+### /etc:smartd.conf
 /dev/sdb -a -o on -S on -s (S/../.././02|L/../../6/03) -m coral-admin-list@lehigh.edu
 
 
