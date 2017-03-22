@@ -14,7 +14,7 @@ These are commands/settings i usually use for Admin duties.
 
 
 # Memory check
-`for i in \`seq 2 15\`; do ssh polyp$i 'hostname;free -h'; done`
+<p><code>`for i in \`seq 2 15\`; do ssh polyp$i 'hostname;free -h'; done`</code></p>
 
 
 # torque 
@@ -23,4 +23,5 @@ These are commands/settings i usually use for Admin duties.
  
  Show server/queue settings:
  `qmgr -c 'p s'`
+ See Jobs logs:
 `tracejob $PID`
