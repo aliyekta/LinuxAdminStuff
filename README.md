@@ -10,11 +10,11 @@ These are commands/settings i usually use for Admin duties.
 
 
 # Sed with hostname variable:
-for i in `seq 2 15`; do ssh polyp$i 'sed -i "s/polyp1/$HOSTNAME/g" /etc/exim4/exim4.conf.template';done
+`for i in `seq 2 15`; do ssh polyp$i 'sed -i "s/polyp1/$HOSTNAME/g" /etc/exim4/exim4.conf.template';done`
 
 
 # Memory check
-for i in `seq 2 15`; do ssh polyp$i 'hostname;free -h'; done
+`for i in \`seq 2 15\`; do ssh polyp$i 'hostname;free -h'; done`
 
 
 # torque 
