@@ -10,7 +10,7 @@ These are commands/settings i usually use for Admin duties.
 
 
 # Sed with hostname variable:
-`for i in `seq 2 15`; do ssh polyp$i 'sed -i "s/polyp1/$HOSTNAME/g" /etc/exim4/exim4.conf.template';done`
+<p><code>for i in `seq 2 15`; do ssh polyp$i 'sed -i "s/polyp1/$HOSTNAME/g" /etc/exim4/exim4.conf.template';done</code></p>
 
 
 # Memory check
