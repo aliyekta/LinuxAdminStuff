@@ -17,7 +17,7 @@ These are commands/settings i usually use for Admin duties.
 <p><code>`for i in \`seq 2 15\`; do ssh polyp$i 'hostname;free -h'; done`</code></p>
 
 
-# torque 
+# Torque - Schedulder
  Show stats:
  `/usr/local/maui/bin/showstats -n`
  
@@ -25,3 +25,9 @@ These are commands/settings i usually use for Admin duties.
  `qmgr -c 'p s'`
  See Jobs logs:
 `tracejob $PID`
+# Delete a week old installs
+### we are installing daily so need to clean out builds of last week 
+
+`typeset -RZ3 i; for i in {1..38}; do ssh "grid$i" "hostname; find /folder/of/installs/* -type d -ctime +7 -maxdepth 0 | xargs rm -rf "& ; done`
+### CRON  Weekly
+`0  7 * * 6 `
