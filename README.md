@@ -14,7 +14,7 @@ These are commands/settings i usually use for Admin duties. Pasted here for book
 
 
 # Memory check
-<p><code>`for i in \`seq 2 15\`; do ssh polyp$i 'hostname;free -h'; done`</code></p>
+<p><code>`for i in `seq 2 15`; do ssh polyp$i 'hostname;free -h'; done`</code></p>
 
 
 # Torque - Schedulder
