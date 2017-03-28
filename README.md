@@ -13,8 +13,8 @@ These are commands/settings i usually use for Admin duties. Pasted here for book
 <p><code>for i in `seq 2 15`; do ssh polyp$i 'sed -i "s/polyp1/$HOSTNAME/g" /etc/exim4/exim4.conf.template';done</code></p>
 
 
-# Memory check
-<p><code>`for i in `seq 2 15`; do ssh polyp$i 'hostname;free -h'; done`</code></p>
+# Memory check (SWAP Jobs)
+<p><code>for i in `seq 2 15`; do ssh polyp$i 'hostname;free -h'; done</code></p>
 
 
 # Torque - Schedulder
