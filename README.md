@@ -1,4 +1,4 @@
-# LinuxAdminStuff
+# MyLinuxAdminScripts
 These are commands/settings i usually use for Admin duties. Pasted here for book-keeping, hopefully will be usefull for others.
 
 
