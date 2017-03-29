@@ -34,3 +34,8 @@ These are commands/settings i usually use for Admin duties. Pasted here for book
 
 # Kill jobs with 'criteria'
 `ps aux | grep 'criteria' | awk {'print $2'} | xargs kill -9`
+
+
+# Apache rewrite logs
+### Results will accure in /log/apache2/error.log
+`LogLevel alert rewrite:trace3`
