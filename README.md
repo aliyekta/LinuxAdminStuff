@@ -31,3 +31,6 @@ These are commands/settings i usually use for Admin duties. Pasted here for book
 `typeset -RZ3 i; for i in {1..38}; do ssh "grid$i" "hostname; find /folder/of/installs/* -type d -ctime +7 -maxdepth 0 | xargs rm -rf "& ; done`
 ### CRON  Weekly
 `0  7 * * 6 `
+
+# Kill jobs with 'criteria'
+`ps aux | grep 'criteria' | awk {'print $2'} | xargs kill -9`
