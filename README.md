@@ -39,3 +39,6 @@ These are commands/settings i usually use for Admin duties. Pasted here for book
 # Apache rewrite logs
 ### Results will accure in /log/apache2/error.log
 `LogLevel alert rewrite:trace3`
+
+# Block IP
+ `iptables -A INPUT -s $IP -j DROP`
