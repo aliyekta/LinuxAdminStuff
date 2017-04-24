@@ -36,6 +36,8 @@ These are commands/settings i usually use for Admin duties. Pasted here for book
 #### CRON  Weekly
 `0  7 * * 6 `
 
+## Recently changed files
+`find ./ -type f -exec stat --format '%Y :%y %n' "{}" \; | sort -nr | cut -d: -f2- | head`
 
 ## Sed with hostname variable:
 <p><code>for i in `seq 2 15`; do ssh polyp$i 'sed -i "s/polyp1/$HOSTNAME/g" /etc/exim4/exim4.conf.template';done</code></p>
