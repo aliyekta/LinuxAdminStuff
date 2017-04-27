@@ -52,4 +52,4 @@ These are commands/settings i usually use for Admin duties. Pasted here for book
 
 # Misc
 ## Editor change (crontab)
-export EDITOR=emacs
+`export EDITOR=emacs`
